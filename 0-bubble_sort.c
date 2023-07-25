@@ -11,15 +11,8 @@ void bubble_sort(int *array, size_t size)
 	bool swapOccured = true;
 	size_t sorted = 0;
 
-	if (size == 1 || size == 0)
+	if (array == NULL || size == 0)
 		return;
-
-	if (size == 2)
-	{
-		if (array[1] < array[0])
-			swap(&array[1], &array[0]);
-		return;
-	}
 
 	while (swapOccured)
 	{
