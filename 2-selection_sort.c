@@ -15,6 +15,7 @@ void selection_sort(int *array, int size)
 			if (array[j] < array[i])
 			{
 				swap(&array[j], &array[i]);
+				print_array(array, size);
 			}
 		}
 	}
