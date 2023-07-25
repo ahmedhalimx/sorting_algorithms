@@ -6,11 +6,13 @@
  * @size: size of the array
  * Return: Nothing.
  */
-void selection_sort(int *array, int size)
+void selection_sort(int *array, size_t size)
 {
-	for (int i = 0; i < size; ++i)
+	size_t i, j;
+
+	for (i = 0; i < size; ++i)
 	{
-		for (int j = i; j < size; ++j)
+		for (j = i; j < size; ++j)
 		{
 			if (array[j] < array[i])
 			{
